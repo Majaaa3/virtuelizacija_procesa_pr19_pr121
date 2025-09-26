@@ -3,14 +3,35 @@
   "WorkspaceRootPath": "D:\\virtuelizacija_procesa_pr19_pr121\\ConsoleApp1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DB437D34-E893-471D-882E-56CE06F54548}|..\\Common\\Common.csproj|d:\\virtuelizacija_procesa_pr19_pr121\\common\\eissample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB437D34-E893-471D-882E-56CE06F54548}|..\\Common\\Common.csproj|d:\\virtuelizacija_procesa_pr19_pr121\\common\\ieisingestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB437D34-E893-471D-882E-56CE06F54548}|..\\Common\\Common.csproj|d:\\virtuelizacija_procesa_pr19_pr121\\common\\transferstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB437D34-E893-471D-882E-56CE06F54548}|..\\Common\\Common.csproj|d:\\virtuelizacija_procesa_pr19_pr121\\common\\eismeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB437D34-E893-471D-882E-56CE06F54548}|..\\Common\\Common.csproj|d:\\virtuelizacija_procesa_pr19_pr121\\common\\dataformatfault.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB437D34-E893-471D-882E-56CE06F54548}|..\\Common\\Common.csproj|d:\\virtuelizacija_procesa_pr19_pr121\\common\\ack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB437D34-E893-471D-882E-56CE06F54548}|..\\Common\\Common.csproj|d:\\virtuelizacija_procesa_pr19_pr121\\common\\validationfault.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E943BD9-61E6-4CCB-8D8A-2176E851DAAB}|..\\Service\\Service.csproj|d:\\virtuelizacija_procesa_pr19_pr121\\service\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B0CC33E9-8E90-4A43-9F49-AA425FF278C7}|Client.csproj|d:\\virtuelizacija_procesa_pr19_pr121\\consoleapp1\\clientprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0CC33E9-8E90-4A43-9F49-AA425FF278C7}|Client.csproj|solutionrelative:clientprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E943BD9-61E6-4CCB-8D8A-2176E851DAAB}|..\\Service\\Service.csproj|d:\\virtuelizacija_procesa_pr19_pr121\\service\\serviceprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB437D34-E893-471D-882E-56CE06F54548}|..\\Common\\Common.csproj|d:\\virtuelizacija_procesa_pr19_pr121\\common\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,24 +41,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\Common\\Class1.cs",
-              "ToolTip": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\Class1.cs",
-              "RelativeToolTip": "..\\Common\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "IEisIngestService.cs",
+              "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\IEisIngestService.cs",
+              "RelativeDocumentMoniker": "..\\Common\\IEisIngestService.cs",
+              "ToolTip": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\IEisIngestService.cs",
+              "RelativeToolTip": "..\\Common\\IEisIngestService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T15:15:37.559Z",
+              "WhenOpened": "2025-09-26T15:34:02.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "ValidationFault.cs",
+              "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\ValidationFault.cs",
+              "RelativeDocumentMoniker": "..\\Common\\ValidationFault.cs",
+              "ToolTip": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\ValidationFault.cs",
+              "RelativeToolTip": "..\\Common\\ValidationFault.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T15:33:11.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataFormatFault.cs",
+              "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\DataFormatFault.cs",
+              "RelativeDocumentMoniker": "..\\Common\\DataFormatFault.cs",
+              "ToolTip": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\DataFormatFault.cs",
+              "RelativeToolTip": "..\\Common\\DataFormatFault.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T15:32:34.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ack.cs",
+              "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\Ack.cs",
+              "RelativeDocumentMoniker": "..\\Common\\Ack.cs",
+              "ToolTip": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\Ack.cs",
+              "RelativeToolTip": "..\\Common\\Ack.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T15:31:34.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EisSample.cs",
+              "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\EisSample.cs",
+              "RelativeDocumentMoniker": "..\\Common\\EisSample.cs",
+              "ToolTip": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\EisSample.cs",
+              "RelativeToolTip": "..\\Common\\EisSample.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T15:30:54.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EisMeta.cs",
+              "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\EisMeta.cs",
+              "RelativeDocumentMoniker": "..\\Common\\EisMeta.cs",
+              "ToolTip": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\EisMeta.cs",
+              "RelativeToolTip": "..\\Common\\EisMeta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T15:29:41.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransferStatus.cs",
+              "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\TransferStatus.cs",
+              "RelativeDocumentMoniker": "..\\Common\\TransferStatus.cs",
+              "ToolTip": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\TransferStatus.cs",
+              "RelativeToolTip": "..\\Common\\TransferStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T15:28:57.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Service\\App.config",
+              "RelativeDocumentMoniker": "..\\Service\\App.config",
+              "ToolTip": "D:\\virtuelizacija_procesa_pr19_pr121\\Service\\App.config",
+              "RelativeToolTip": "..\\Service\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-09-26T15:21:24.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ServiceProgram.cs",
               "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Service\\ServiceProgram.cs",
               "RelativeDocumentMoniker": "..\\Service\\ServiceProgram.cs",
@@ -45,12 +157,11 @@
               "RelativeToolTip": "..\\Service\\ServiceProgram.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T15:14:25.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T15:14:25.447Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "ClientProgram.cs",
               "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\ConsoleApp1\\ClientProgram.cs",
               "RelativeDocumentMoniker": "ClientProgram.cs",
