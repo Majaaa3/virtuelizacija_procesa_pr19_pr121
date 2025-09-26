@@ -1,15 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Service
 {
-    internal class ServiceProgram
+    public class ServiceProgram
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            using (var host = new ServiceHost(typeof(EisIngestService)))
+            {
+                host.Open();
+                Console.WriteLine("EisIngestService started. Press ENTER to exit...");
+                Console.ReadLine();
+                host.Close();
+            }
         }
     }
 }

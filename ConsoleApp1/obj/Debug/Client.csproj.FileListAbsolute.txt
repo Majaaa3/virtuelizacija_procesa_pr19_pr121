@@ -1,0 +1,10 @@
+D:\virtuelizacija_procesa_pr19_pr121\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\virtuelizacija_procesa_pr19_pr121\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\virtuelizacija_procesa_pr19_pr121\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\virtuelizacija_procesa_pr19_pr121\ConsoleApp1\bin\Debug\Common.dll
+D:\virtuelizacija_procesa_pr19_pr121\ConsoleApp1\bin\Debug\Common.pdb
+D:\virtuelizacija_procesa_pr19_pr121\ConsoleApp1\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\virtuelizacija_procesa_pr19_pr121\ConsoleApp1\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\virtuelizacija_procesa_pr19_pr121\ConsoleApp1\obj\Debug\Client.csproj.Up2Date
+D:\virtuelizacija_procesa_pr19_pr121\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\virtuelizacija_procesa_pr19_pr121\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

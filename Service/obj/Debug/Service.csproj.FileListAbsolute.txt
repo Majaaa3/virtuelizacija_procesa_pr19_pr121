@@ -1,0 +1,10 @@
+D:\virtuelizacija_procesa_pr19_pr121\Service\bin\Debug\Service.exe.config
+D:\virtuelizacija_procesa_pr19_pr121\Service\bin\Debug\Service.exe
+D:\virtuelizacija_procesa_pr19_pr121\Service\bin\Debug\Service.pdb
+D:\virtuelizacija_procesa_pr19_pr121\Service\bin\Debug\Common.dll
+D:\virtuelizacija_procesa_pr19_pr121\Service\bin\Debug\Common.pdb
+D:\virtuelizacija_procesa_pr19_pr121\Service\obj\Debug\Service.csproj.AssemblyReference.cache
+D:\virtuelizacija_procesa_pr19_pr121\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+D:\virtuelizacija_procesa_pr19_pr121\Service\obj\Debug\Service.csproj.Up2Date
+D:\virtuelizacija_procesa_pr19_pr121\Service\obj\Debug\Service.exe
+D:\virtuelizacija_procesa_pr19_pr121\Service\obj\Debug\Service.pdb
