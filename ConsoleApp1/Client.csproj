@@ -34,7 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +50,32 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_100_03-07-2023_11-46.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_10_04-07-2023_04-04.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_15_04-07-2023_03-16.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_20_04-07-2023_02-15.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_25_04-07-2023_01-27.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_30_04-07-2023_00-26.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_35_03-07-2023_23-38.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_40_03-07-2023_22-38.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_45_03-07-2023_21-50.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_50_03-07-2023_20-49.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_55_03-07-2023_20-01.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_5_04-07-2023_05-13.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_60_03-07-2023_19-00.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_65_03-07-2023_18-12.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_70_03-07-2023_17-12.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_75_03-07-2023_16-24.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_80_03-07-2023_15-23.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_85_03-07-2023_14-35.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_90_03-07-2023_13-35.csv" />
+    <None Include="Dataset\B01\EIS measurements\Test_1\Hioki\Hk_IFR14500_SoC_95_03-07-2023_12-47.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{DB437D34-E893-471D-882E-56CE06F54548}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

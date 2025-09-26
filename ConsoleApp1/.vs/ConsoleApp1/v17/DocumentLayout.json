@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\virtuelizacija_procesa_pr19_pr121\\ConsoleApp1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B0CC33E9-8E90-4A43-9F49-AA425FF278C7}|Client.csproj|D:\\virtuelizacija_procesa_pr19_pr121\\ConsoleApp1\\clientprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0CC33E9-8E90-4A43-9F49-AA425FF278C7}|Client.csproj|solutionrelative:clientprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0CC33E9-8E90-4A43-9F49-AA425FF278C7}|Client.csproj|d:\\virtuelizacija_procesa_pr19_pr121\\consoleapp1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B0CC33E9-8E90-4A43-9F49-AA425FF278C7}|Client.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5E943BD9-61E6-4CCB-8D8A-2176E851DAAB}|..\\Service\\Service.csproj|d:\\virtuelizacija_procesa_pr19_pr121\\service\\sessionwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,10 +42,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E943BD9-61E6-4CCB-8D8A-2176E851DAAB}|..\\Service\\Service.csproj|d:\\virtuelizacija_procesa_pr19_pr121\\service\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0CC33E9-8E90-4A43-9F49-AA425FF278C7}|Client.csproj|D:\\virtuelizacija_procesa_pr19_pr121\\ConsoleApp1\\clientprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0CC33E9-8E90-4A43-9F49-AA425FF278C7}|Client.csproj|solutionrelative:clientprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,11 +51,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\ConsoleApp1\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "D:\\virtuelizacija_procesa_pr19_pr121\\ConsoleApp1\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-09-26T16:24:18.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SessionWriter.cs",
               "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Service\\SessionWriter.cs",
               "RelativeDocumentMoniker": "..\\Service\\SessionWriter.cs",
@@ -64,20 +81,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EisIngestService.cs",
-              "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Service\\EisIngestService.cs",
-              "RelativeDocumentMoniker": "..\\Service\\EisIngestService.cs",
-              "ToolTip": "D:\\virtuelizacija_procesa_pr19_pr121\\Service\\EisIngestService.cs",
-              "RelativeToolTip": "..\\Service\\EisIngestService.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAwwA4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T15:59:08.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "IEisIngestService.cs",
               "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\IEisIngestService.cs",
               "RelativeDocumentMoniker": "..\\Common\\IEisIngestService.cs",
@@ -89,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ValidationFault.cs",
               "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\ValidationFault.cs",
               "RelativeDocumentMoniker": "..\\Common\\ValidationFault.cs",
@@ -101,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DataFormatFault.cs",
               "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\DataFormatFault.cs",
               "RelativeDocumentMoniker": "..\\Common\\DataFormatFault.cs",
@@ -113,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Ack.cs",
               "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\Ack.cs",
               "RelativeDocumentMoniker": "..\\Common\\Ack.cs",
@@ -125,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "EisSample.cs",
               "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\EisSample.cs",
               "RelativeDocumentMoniker": "..\\Common\\EisSample.cs",
@@ -137,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "EisMeta.cs",
               "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\EisMeta.cs",
               "RelativeDocumentMoniker": "..\\Common\\EisMeta.cs",
@@ -149,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "TransferStatus.cs",
               "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Common\\TransferStatus.cs",
               "RelativeDocumentMoniker": "..\\Common\\TransferStatus.cs",
@@ -161,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "App.config",
               "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Service\\App.config",
               "RelativeDocumentMoniker": "..\\Service\\App.config",
@@ -173,7 +177,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "ClientProgram.cs",
+              "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\ConsoleApp1\\ClientProgram.cs",
+              "RelativeDocumentMoniker": "ClientProgram.cs",
+              "ToolTip": "D:\\virtuelizacija_procesa_pr19_pr121\\ConsoleApp1\\ClientProgram.cs",
+              "RelativeToolTip": "ClientProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T15:11:51.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EisIngestService.cs",
+              "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Service\\EisIngestService.cs",
+              "RelativeDocumentMoniker": "..\\Service\\EisIngestService.cs",
+              "ToolTip": "D:\\virtuelizacija_procesa_pr19_pr121\\Service\\EisIngestService.cs",
+              "RelativeToolTip": "..\\Service\\EisIngestService.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T15:59:08.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ServiceProgram.cs",
               "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\Service\\ServiceProgram.cs",
               "RelativeDocumentMoniker": "..\\Service\\ServiceProgram.cs",
@@ -181,20 +210,7 @@
               "RelativeToolTip": "..\\Service\\ServiceProgram.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T15:14:25.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ClientProgram.cs",
-              "DocumentMoniker": "D:\\virtuelizacija_procesa_pr19_pr121\\ConsoleApp1\\ClientProgram.cs",
-              "RelativeDocumentMoniker": "ClientProgram.cs",
-              "ToolTip": "D:\\virtuelizacija_procesa_pr19_pr121\\ConsoleApp1\\ClientProgram.cs",
-              "RelativeToolTip": "ClientProgram.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T15:11:51.686Z"
+              "WhenOpened": "2025-09-26T15:14:25.447Z"
             }
           ]
         }
