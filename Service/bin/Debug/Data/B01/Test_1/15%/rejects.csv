@@ -1,4 +1,0 @@
-UtcTime,Reason,RowIndex,FrequencyHz,R_ohm,X_ohm,T_degC,Range_ohm
-2025-09-26T18:06:55.8106258Z,Over planned rows (28).,28,510,0.0631184,-0.00553666,20,0.3
-2025-09-26T18:06:55.8130683Z,Over planned rows (28).,29,810,0.0610197,-0.00451772,20,0.3
-2025-09-26T18:06:55.8140884Z,Over planned rows (28).,30,1000,0.0600619,-0.00387495,20,0.3

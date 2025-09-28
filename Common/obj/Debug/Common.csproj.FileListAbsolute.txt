@@ -1,6 +1,0 @@
-D:\virtuelizacija_procesa_pr19_pr121\Common\bin\Debug\Common.dll
-D:\virtuelizacija_procesa_pr19_pr121\Common\bin\Debug\Common.pdb
-D:\virtuelizacija_procesa_pr19_pr121\Common\obj\Debug\Common.csproj.AssemblyReference.cache
-D:\virtuelizacija_procesa_pr19_pr121\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
-D:\virtuelizacija_procesa_pr19_pr121\Common\obj\Debug\Common.dll
-D:\virtuelizacija_procesa_pr19_pr121\Common\obj\Debug\Common.pdb

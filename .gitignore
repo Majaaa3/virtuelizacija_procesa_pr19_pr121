@@ -1,0 +1,18 @@
+﻿# Visual Studio / .NET build artefakti
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+
+# Binaries & simboli
+*.exe
+*.dll
+*.pdb
+
+# Logovi
+*.log
+
+# Lokalni podaci (ne gurati na repo)
+Data/
+Dataset/

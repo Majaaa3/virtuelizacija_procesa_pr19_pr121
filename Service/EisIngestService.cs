@@ -6,10 +6,28 @@ using System.ServiceModel;
 
 namespace Service
 {
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class EisIngestService : IEisIngestService
     {
         private static readonly ConcurrentDictionary<string, SessionWriter> _sessions =
             new ConcurrentDictionary<string, SessionWriter>();
+
+        // 👉 Delegati i događaji
+        public event Action<string> OnTransferStarted;
+        public event Action<string, EisSample> OnSampleReceived;
+        public event Action<string> OnTransferCompleted;
+        public event Action<string> OnWarningRaised;
+
+        // 👉 Čuvamo poslednju temperaturu po sesiji (za ΔT analitiku)
+        private static readonly ConcurrentDictionary<string, double?> _lastTemp =
+            new ConcurrentDictionary<string, double?>();
+
+        // 👉 Pragovi iz konfiguracije
+        private readonly double _tThreshold = double.Parse(ConfigurationManager.AppSettings["T_threshold"] ?? "5");
+        private readonly double _rMin = double.Parse(ConfigurationManager.AppSettings["R_min"] ?? "0.001");
+        private readonly double _rMax = double.Parse(ConfigurationManager.AppSettings["R_max"] ?? "1000");
+        private readonly double _rangeMin = double.Parse(ConfigurationManager.AppSettings["Range_min"] ?? "0.001");
+        private readonly double _rangeMax = double.Parse(ConfigurationManager.AppSettings["Range_max"] ?? "1000");
 
         public Ack StartSession(EisMeta meta)
         {
@@ -29,6 +47,12 @@ namespace Service
 
             Console.WriteLine("[StartSession] -> " + writer.Folder);
 
+            // Resetuj ΔT stanje
+            _lastTemp[sessionId] = null;
+
+            // Podigni događaj
+            OnTransferStarted?.Invoke(sessionId);
+
             return new Ack
             {
                 Ok = true,
@@ -44,6 +68,8 @@ namespace Service
             if (!_sessions.TryGetValue(sessionId, out writer))
                 ThrowValidation("Nepoznata sesija.");
 
+            var meta = writer.Meta; // ✅ koristimo meta podatke za BatteryId i SoC
+
             // Validacije (tačka 3)
             if (sample == null) ThrowValidation("Sample je null.");
             if (!IsFinite(sample.FrequencyHz) || sample.FrequencyHz <= 0) ThrowValidation("FrequencyHz mora biti > 0 i realan broj.");
@@ -53,6 +79,41 @@ namespace Service
             if (!IsFinite(sample.Range_ohm) || sample.Range_ohm < 0) ThrowValidation("Range_ohm mora biti >= 0 i realan broj.");
             if (sample.RowIndex < 0) ThrowValidation("RowIndex mora biti >= 0.");
             if (!writer.IsNextRowIndex(sample.RowIndex)) ThrowValidation("RowIndex mora monoton da raste.");
+
+            // 👉 Analitika ΔT
+            var prevT = _lastTemp[sessionId];
+            if (prevT.HasValue)
+            {
+                double deltaT = sample.T_degC - prevT.Value;
+                if (Math.Abs(deltaT) > _tThreshold)
+                {
+                    string msg = $"[TemperatureSpike] ΔT={deltaT:F2} °C, " +
+                                 $"T={sample.T_degC}, SoC={meta.SoCPercent}, " +
+                                 $"BatteryId={meta.BatteryId}, Freq={sample.FrequencyHz}";
+                    Console.WriteLine(msg);
+                    OnWarningRaised?.Invoke(msg);
+                }
+            }
+            _lastTemp[sessionId] = sample.T_degC;
+
+            // 👉 Analitika senzora R i Range
+            if (sample.R_ohm < _rMin || sample.R_ohm > _rMax)
+            {
+                string msg = $"[ResistanceOutOfBounds] Row={sample.RowIndex}, " +
+                             $"R={sample.R_ohm} (expected {_rMin}..{_rMax}), " +
+                             $"SoC={meta.SoCPercent}, BatteryId={meta.BatteryId}";
+                Console.WriteLine(msg);
+                OnWarningRaised?.Invoke(msg);
+            }
+
+            if (sample.Range_ohm < _rangeMin || sample.Range_ohm > _rangeMax)
+            {
+                string msg = $"[RangeMismatch] Row={sample.RowIndex}, " +
+                             $"Range={sample.Range_ohm} (expected {_rangeMin}..{_rangeMax}), " +
+                             $"SoC={meta.SoCPercent}, BatteryId={meta.BatteryId}";
+                Console.WriteLine(msg);
+                OnWarningRaised?.Invoke(msg);
+            }
 
             string rejectReason;
             var ok = writer.AppendSample(sample, out rejectReason);
@@ -66,6 +127,9 @@ namespace Service
                     SessionId = sessionId
                 };
             }
+
+            // Podigni događaj za uzorak
+            OnSampleReceived?.Invoke(sessionId, sample);
 
             return new Ack
             {
@@ -82,9 +146,25 @@ namespace Service
             if (_sessions.TryRemove(sessionId, out writer))
             {
                 writer.Dispose();
-                return new Ack { Ok = true, Message = "Završeno.", Status = TransferStatus.COMPLETED, SessionId = sessionId };
+
+                // Podigni događaj
+                OnTransferCompleted?.Invoke(sessionId);
+
+                return new Ack
+                {
+                    Ok = true,
+                    Message = "Završeno.",
+                    Status = TransferStatus.COMPLETED,
+                    SessionId = sessionId
+                };
             }
-            return new Ack { Ok = false, Message = "Nepoznata sesija.", Status = TransferStatus.IN_PROGRESS, SessionId = sessionId };
+            return new Ack
+            {
+                Ok = false,
+                Message = "Nepoznata sesija.",
+                Status = TransferStatus.IN_PROGRESS,
+                SessionId = sessionId
+            };
         }
 
         private static void ThrowValidation(string msg)
@@ -94,3 +174,5 @@ namespace Service
         private static bool IsFinite(double d) { return !(double.IsNaN(d) || double.IsInfinity(d)); }
     }
 }
+
+

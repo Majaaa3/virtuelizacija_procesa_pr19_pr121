@@ -18,8 +18,12 @@ namespace Service
 
         public string Folder { get { return _folder; } }
 
+        // ✅ Dodato: čuvamo meta podatke
+        public EisMeta Meta { get; }
+
         public SessionWriter(string root, EisMeta meta)
         {
+            Meta = meta;   // ✅ zapamti meta za kasniji pristup u servisu
             _plannedRows = meta.TotalRows;
 
             _folder = Path.Combine(root, meta.BatteryId, meta.TestId, meta.SoCPercent + "%");
